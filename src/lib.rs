@@ -1,3 +1,4 @@
+#[macro_export]
 #[allow(unused_macros)]
 macro_rules! call_with_file_or_stdin {
     ($func: ident, $fname: expr) => {
@@ -15,6 +16,7 @@ macro_rules! call_with_file_or_stdin {
     };
 }
 
+#[macro_export]
 #[allow(unused_macros)]
 macro_rules! call_with_file_or_stdout {
     ($func: ident, $fname: expr) => {
